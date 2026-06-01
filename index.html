@@ -74,6 +74,11 @@
   .pill{margin-left:auto;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
     color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px;white-space:nowrap}
   .product .ico{opacity:.5}
+  .product.live{color:var(--cream);cursor:pointer}
+  .product.live .name{opacity:1}
+  .product.live .ico{opacity:.9;color:var(--kraft)}
+  .price{margin-left:auto;font-size:12.5px;font-weight:600;color:#221d18;background:var(--kraft);
+    border-radius:999px;padding:4px 12px;white-space:nowrap}
 
   /* brand rows */
   .brand{border:1px solid var(--line);background:var(--card);border-radius:15px;padding:15px 17px;transition:background .2s}
@@ -131,9 +136,9 @@
   <!-- ============================================================= -->
   <div class="label fade d3">Digital products</div>
   <div class="stack fade d3">
-    <div class="btn product"><span class="ico">&#9670;</span><span class="name">The AI Second Brain &mdash; Operating Manual</span><span class="pill">Coming soon</span></div>
-    <div class="btn product"><span class="ico">&#9670;</span><span class="name">The 6-Piece Brand Image Method</span><span class="pill">Coming soon</span></div>
-    <div class="btn product"><span class="ico">&#9670;</span><span class="name">The Daily AI Video Pipeline</span><span class="pill">Coming soon</span></div>
+    <a class="btn product live" href="https://hussdigitalmedia.gumroad.com/l/secondbrain" target="_blank" rel="noopener"><span class="ico">&#9670;</span><span class="name">The AI Second Brain &mdash; Operating Manual</span><span class="price">$19</span></a>
+    <a class="btn product live" href="https://hussdigitalmedia.gumroad.com/l/imagemethod" target="_blank" rel="noopener"><span class="ico">&#9670;</span><span class="name">The 6-Piece Brand Image Method</span><span class="price">$14</span></a>
+    <a class="btn product live" href="https://hussdigitalmedia.gumroad.com/l/videopipeline" target="_blank" rel="noopener"><span class="ico">&#9670;</span><span class="name">The Daily AI Video Pipeline</span><span class="price">$29</span></a>
     <div class="btn product"><span class="ico">&#9670;</span><span class="name">The Agent Orchestration Playbook</span><span class="pill">Coming soon</span></div>
     <div class="btn product"><span class="ico">&#9670;</span><span class="name">The Lean Operator&rsquo;s Bundle</span><span class="pill">Coming soon</span></div>
   </div>
