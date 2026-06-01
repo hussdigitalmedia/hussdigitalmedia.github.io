@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Huss Digital Media — Links</title>
+<meta name="description" content="Huss Digital Media — AI-native digital media. Websites, social content, video, and digital products, all built with AI on the team." />
+<link rel="icon" type="image/png" href="assets/hdm-mark.png" />
+
+<!-- Open Graph (link preview when shared) -->
+<meta property="og:title" content="Huss Digital Media" />
+<meta property="og:description" content="AI-native digital media. Self-improving websites, social content, video, and digital products." />
+<meta property="og:image" content="assets/hdm-mark.png" />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#1a1714; --bg2:#221d18;
+    --cream:#efe7d5; --kraft:#d5bfa0; --clay:#bfa47b; --muted:#938876;
+    --line:rgba(213,191,160,.14); --card:rgba(213,191,160,.05); --card-h:rgba(213,191,160,.09);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg); color:var(--cream);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    line-height:1.45; min-height:100dvh;
+    -webkit-font-smoothing:antialiased;
+    background-image:
+      radial-gradient(120% 70% at 50% -10%, rgba(213,191,160,.10), transparent 60%),
+      radial-gradient(90% 50% at 50% 0%, rgba(191,164,123,.06), transparent 55%);
+    background-repeat:no-repeat;
+  }
+  .wrap{max-width:480px;margin:0 auto;padding:max(28px,env(safe-area-inset-top)) 22px 56px;}
+
+  /* header */
+  header{text-align:center;padding:14px 0 26px;}
+  .mark{width:76px;height:76px;border-radius:20px;box-shadow:0 10px 34px rgba(0,0,0,.5);display:inline-block}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:30px;letter-spacing:-.01em;margin:18px 0 8px}
+  .tag{color:var(--clay);font-size:14.5px;max-width:330px;margin:0 auto;line-height:1.5}
+
+  /* shared button */
+  .btn{display:flex;align-items:center;gap:12px;width:100%;text-decoration:none;color:var(--cream);
+    border:1px solid var(--line);background:var(--card);border-radius:15px;padding:16px 18px;
+    font-size:15.5px;font-weight:500;transition:transform .16s ease,background .2s ease,border-color .2s ease;
+    -webkit-tap-highlight-color:transparent}
+  .btn:hover{background:var(--card-h);border-color:rgba(213,191,160,.3)}
+  .btn:active{transform:scale(.985)}
+  .btn .arr{margin-left:auto;color:var(--clay);transition:transform .18s ease}
+  .btn:hover .arr{transform:translateX(3px)}
+
+  /* primary cta */
+  .primary{justify-content:center;background:linear-gradient(180deg,#e3cfae,#d2bb98);
+    color:#221d18;border:none;font-weight:600;font-size:16.5px;padding:18px;
+    box-shadow:0 8px 26px rgba(213,191,160,.18)}
+  .primary:hover{background:linear-gradient(180deg,#ecd9b9,#d8c1a0)}
+  .primary .arr{color:#4a3f30}
+  .primary:hover .arr{color:#221d18}
+
+  /* section labels */
+  .label{display:flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--muted);margin:34px 4px 14px}
+  .label::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  .stack{display:flex;flex-direction:column;gap:11px}
+
+  /* product slots */
+  .product{color:var(--clay);cursor:default}
+  .product .name{font-weight:500;color:var(--cream);opacity:.82}
+  .pill{margin-left:auto;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 10px;white-space:nowrap}
+  .product .ico{opacity:.5}
+
+  /* brand rows */
+  .brand{border:1px solid var(--line);background:var(--card);border-radius:15px;padding:15px 17px;transition:background .2s}
+  .brand:hover{background:var(--card-h)}
+  .brand-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .brand-name{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:18px}
+  .brand-desc{color:var(--clay);font-size:13px;width:100%;margin-top:3px;line-height:1.45}
+  .soon{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+  .socials{display:flex;gap:9px;margin-top:13px;flex-wrap:wrap}
+  .sicon{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:11px;
+    border:1px solid var(--line);background:rgba(0,0,0,.18);color:var(--cream);
+    transition:transform .15s ease,background .2s,color .2s,border-color .2s}
+  .sicon:hover{background:var(--kraft);color:#221d18;border-color:var(--kraft);transform:translateY(-2px)}
+  .sicon svg{width:19px;height:19px;fill:currentColor}
+  .sicon.off{color:var(--muted);opacity:.45;pointer-events:none}
+
+  /* footer */
+  footer{margin-top:42px;text-align:center}
+  .fsoc{display:flex;justify-content:center;gap:12px;margin-bottom:16px}
+  .fsoc a{color:var(--muted);transition:color .2s,transform .15s}
+  .fsoc a:hover{color:var(--kraft);transform:translateY(-2px)}
+  .fsoc svg{width:18px;height:18px;fill:currentColor}
+  .copy{color:var(--muted);font-size:12px;letter-spacing:.02em}
+  .copy a{color:var(--clay);text-decoration:none}
+
+  /* entrance */
+  .fade{opacity:0;transform:translateY(10px);animation:up .55s ease forwards}
+  @keyframes up{to{opacity:1;transform:none}}
+  .d1{animation-delay:.04s}.d2{animation-delay:.1s}.d3{animation-delay:.16s}
+  .d4{animation-delay:.22s}.d5{animation-delay:.28s}.d6{animation-delay:.34s}
+  @media (prefers-reduced-motion:reduce){.fade{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="fade d1">
+    <img class="mark" src="assets/hdm-mark.png" alt="Huss Digital Media" />
+    <h1>Huss Digital Media</h1>
+    <p class="tag">AI-native digital media. Self-improving websites, social content, and video, built with AI on the team.</p>
+  </header>
+
+  <!-- ============================================================= -->
+  <!-- PRIMARY  —  edit the href below if the main site URL changes  -->
+  <!-- ============================================================= -->
+  <a class="btn primary fade d2" href="https://hussdigitalmedia.com" target="_blank" rel="noopener">
+    <span>Visit Huss Digital Media</span><span class="arr">&rarr;</span>
+  </a>
+
+  <!-- ============================================================= -->
+  <!-- DIGITAL PRODUCTS  —  replace name + add href when each ships. -->
+  <!-- To activate a slot: change <span> to <a href="..."> and drop  -->
+  <!-- the "Coming soon" pill.                                       -->
+  <!-- ============================================================= -->
+  <div class="label fade d3">Digital products</div>
+  <div class="stack fade d3">
+    <div class="btn product"><span class="ico">&#9670;</span><span class="name">Product one</span><span class="pill">Coming soon</span></div>
+    <div class="btn product"><span class="ico">&#9670;</span><span class="name">Product two</span><span class="pill">Coming soon</span></div>
+    <div class="btn product"><span class="ico">&#9670;</span><span class="name">Product three</span><span class="pill">Coming soon</span></div>
+    <div class="btn product"><span class="ico">&#9670;</span><span class="name">Product four</span><span class="pill">Coming soon</span></div>
+    <div class="btn product"><span class="ico">&#9670;</span><span class="name">Product five</span><span class="pill">Coming soon</span></div>
+  </div>
+
+  <!-- ============================================================= -->
+  <!-- CHANNELS  —  edit hrefs per brand. Set a social live by giving -->
+  <!-- the <a> a real href and removing class "off".                 -->
+  <!-- ============================================================= -->
+  <div class="label fade d4">Our channels</div>
+  <div class="stack fade d4">
+
+    <!-- History Off Course (LIVE) -->
+    <div class="brand">
+      <div class="brand-top">
+        <span class="brand-name">History Off Course</span>
+      </div>
+      <div class="brand-desc">A daily AI what-if history channel. New counterfactual short every day.</div>
+      <div class="socials">
+        <a class="sicon" href="https://www.youtube.com/@historyoffcourse" target="_blank" rel="noopener" aria-label="HOC on YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+        <a class="sicon" href="https://www.instagram.com/historyoffcourse" target="_blank" rel="noopener" aria-label="HOC on Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.52.01-4.76.07-.9.04-1.38.19-1.7.32-.43.16-.74.36-1.06.68-.32.32-.52.63-.68 1.06-.13.32-.28.8-.32 1.7C3.21 8.48 3.2 8.85 3.2 12s.01 3.52.07 4.76c.04.9.19 1.38.32 1.7.16.43.36.74.68 1.06.32.32.63.52 1.06.68.32.13.8.28 1.7.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.38-.19 1.7-.32.43-.16.74-.36 1.06-.68.32-.32.52-.63.68-1.06.13-.32.28-.8.32-1.7.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.38-.32-1.7a2.86 2.86 0 0 0-.68-1.06 2.86 2.86 0 0 0-1.06-.68c-.32-.13-.8-.28-1.7-.32C15.52 4.01 15.15 4 12 4zm0 3.06A4.94 4.94 0 1 0 12 17a4.94 4.94 0 0 0 0-9.94zm0 8.14A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm6.3-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg></a>
+        <a class="sicon" href="https://www.tiktok.com/@historyoffcourse" target="_blank" rel="noopener" aria-label="HOC on TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.9a2.34 2.34 0 1 1-2.34-2.34c.2 0 .4.03.59.08v-3.3a5.66 5.66 0 0 0-.59-.03 5.64 5.64 0 1 0 5.64 5.64V9.01a7.5 7.5 0 0 0 4.36 1.4V7.2a4.28 4.28 0 0 1-3.4-1.38z"/></svg></a>
+        <a class="sicon" href="https://www.facebook.com/historyoffcourse" target="_blank" rel="noopener" aria-label="HOC on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.07A12 12 0 1 0 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.8-4.69 4.55-4.69 1.32 0 2.7.24 2.7.24v2.97h-1.52c-1.5 0-1.96.93-1.96 1.89v2.25h3.34l-.53 3.49h-2.81V24A12 12 0 0 0 24 12.07z"/></svg></a>
+      </div>
+    </div>
+
+    <!-- The Live Cut (launching soon) -->
+    <div class="brand">
+      <div class="brand-top">
+        <span class="brand-name">The Live Cut</span>
+        <span class="soon">Launching soon</span>
+      </div>
+      <div class="brand-desc">The best moments from live streams, cut and narrated daily.</div>
+      <div class="socials">
+        <span class="sicon off" aria-label="TikTok coming soon"><svg viewBox="0 0 24 24"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.9a2.34 2.34 0 1 1-2.34-2.34c.2 0 .4.03.59.08v-3.3a5.66 5.66 0 0 0-.59-.03 5.64 5.64 0 1 0 5.64 5.64V9.01a7.5 7.5 0 0 0 4.36 1.4V7.2a4.28 4.28 0 0 1-3.4-1.38z"/></svg></span>
+        <span class="sicon off" aria-label="Instagram coming soon"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 4.86A4.94 4.94 0 1 0 12 17a4.94 4.94 0 0 0 0-9.94zm0 8.14A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm6.3-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg></span>
+        <span class="sicon off" aria-label="YouTube coming soon"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></span>
+      </div>
+    </div>
+
+    <!-- Unfathomed (launching soon) -->
+    <div class="brand">
+      <div class="brand-top">
+        <span class="brand-name">Unfathomed</span>
+        <span class="soon">Launching soon</span>
+      </div>
+      <div class="brand-desc">The deep, the dark, the unexplained. Long-form documentary, fully AI-produced.</div>
+      <div class="socials">
+        <span class="sicon off" aria-label="YouTube coming soon"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></span>
+        <span class="sicon off" aria-label="TikTok coming soon"><svg viewBox="0 0 24 24"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.9a2.34 2.34 0 1 1-2.34-2.34c.2 0 .4.03.59.08v-3.3a5.66 5.66 0 0 0-.59-.03 5.64 5.64 0 1 0 5.64 5.64V9.01a7.5 7.5 0 0 0 4.36 1.4V7.2a4.28 4.28 0 0 1-3.4-1.38z"/></svg></span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="fade d6">
+    <div class="fsoc">
+      <a href="https://www.instagram.com/hussdigitalmedia" target="_blank" rel="noopener" aria-label="HDM on Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.86s0 3.6-.07 4.86c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.86.07s-3.6 0-4.86-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.86c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.4 2.2 8.8 2.2 12 2.2zm0 4.86A4.94 4.94 0 1 0 12 17a4.94 4.94 0 0 0 0-9.94zm0 8.14A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm6.3-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg></a>
+      <a href="https://x.com/hussdigitalmedia" target="_blank" rel="noopener" aria-label="HDM on X"><svg viewBox="0 0 24 24"><path d="M18.9 2.2h3.5l-7.64 8.73L23.7 21.8h-7l-5.48-7.16-6.27 7.16H1.45l8.17-9.34L.85 2.2h7.18l4.95 6.55 5.92-6.55zm-1.23 17.5h1.94L6.4 4.2H4.32l13.35 15.5z"/></svg></a>
+      <a href="https://github.com/hussdigitalmedia" target="_blank" rel="noopener" aria-label="HDM on GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.75.4-1.27.74-1.56-2.56-.3-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.3-.52-1.47.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+    </div>
+    <div class="copy">&copy; 2026 Huss Digital Media &middot; <a href="https://hussdigitalmedia.com">hussdigitalmedia.com</a></div>
+  </footer>
+
+</main>
+</body>
+</html>
